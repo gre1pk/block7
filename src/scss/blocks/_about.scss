@@ -1,0 +1,176 @@
+.about {
+  background-color: $block-color;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: $font-bold;
+    font-size: 28px;
+    padding: 24px 0;
+    letter-spacing: -0.6px;
+    position: relative;
+
+    &::before {
+      content: '';
+      border-left: 4px solid $border-color;
+      height: 40px;
+      border-radius: 0 4px 4px 0;
+      left: -16px;
+      position: absolute;
+
+      @include media-tablet {
+        left: -24px;
+      }
+
+      @include media-notbook {
+        left: -34px;
+      }
+    }
+  }
+
+  &__icon-list {
+    display: none;
+
+    @include media-notbook {
+      display: flex;
+      justify-content: space-between;
+      width: 400px;
+
+      & button {
+        background-color: $block-color;
+        font-size: 16px;
+        line-height: 24px;
+        width: 176px;
+        padding-right: 40px;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+    }
+  }
+
+  &__icon-item {
+    &--tools {
+      background-image: url(../img/ic/repair.svg);
+    }
+
+    &--check {
+      background-image: url(../img/ic/checkstatus.svg);
+    }
+  }
+
+  &__services-list {
+    display: flex;
+    overflow-x: scroll;
+    font-size: 16px;
+    margin: 0 0 24px;
+    color: $grey-text-color;
+
+    @include media-notbook {
+      overflow-x: inherit;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__services-item {
+    color: $grey-text-color;
+    margin-right: 20px;
+    white-space: nowrap;
+    padding: 8px;
+
+    &:hover {
+      background-color: $lite-color;
+      border: 2px solid $border-color;
+      border-radius: 6px;
+      padding: 6px;
+      cursor: pointer;
+    }
+  }
+
+  &__container {
+    @include media-tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    margin: 0 0 16px;
+
+    @include media-tablet {
+      width: 50%;
+      line-height: 20px;
+    }
+
+    &--top {
+      margin-bottom: 30px;
+    }
+
+    &--middle {
+      display: none;
+
+      @include media-tablet {
+        display: inline;
+        width: 100%;
+      }
+    }
+
+    &--bottom {
+      visibility: hidden;
+      display: none;
+
+      @include media-notbook {
+        visibility: visible;
+        display: inline;
+      }
+    }
+  }
+
+  &__further {
+    display: block;
+    margin: 16px 0 16px 32px;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: inherit;
+
+    &::before {
+      content: url(../img/ic/arr.svg);
+      margin-right: 14px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    height: 176px;
+
+    @include media-tablet {
+      height: 208px;
+      flex-grow: 2;
+      margin-left: 48px;
+      margin-bottom: 32px;
+    }
+
+    @include media-notbook {
+      height: 307px;
+      margin-left: 36px;
+      margin-bottom: 50px;
+    }
+
+    & img {
+      width: 100vw;
+      height: 100%;
+      position: absolute;
+      left: -16px;
+
+      @include media-tablet {
+        position: static;
+        width: 100%;
+        border-radius: 6px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.feedback-icon {
+  display: flex;
+  justify-content: flex-start;
+
+  &__item {
+    margin-right: 16px;
+    cursor: pointer;
+
+    &--phone {
+      background-image: url(../img/ic/call.svg);
+    }
+
+    &--message {
+      background-image: url(../img/ic/chat.svg);
+    }
+
+    &--contact {
+      background-image: url(../img/ic/profile.svg);
+    }
+  }
+}

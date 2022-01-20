@@ -1,14 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-</head>
-<body>
-<img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
-<h3>Welcome to Webpack 4 starter </h3>
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kata</title>
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <button type="button" class="page-header__burger icon"></button>
+        <a href="/" class="page-header__logo"
+          ><img height="50" src="./img/logo.svg" alt="logo"
+        /></a>
+        <div class="page-header__icon-list">
+          <button
+            type="button"
+            class="page-header__icon-item page-header__icon-item--tools icon"
+          ></button>
+          <button
+            type="button"
+            class="page-header__icon-item page-header__icon-item--check icon"
+          ></button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="burger-menu burger-menu__wrapper">
+        <div class="burger-menu__header">
+          <button type="button" class="burger-menu__close icon"></button>
+          <a class="burger-menu__logo" href="/"
+            ><img height="50" src="./img/logo.svg" alt="logo"
+          /></a>
+          <button type="button" class="burger-menu__search icon"></button>
+        </div>
+        <nav>
+          <ul class="burger-menu__list">
+            <li class="burger-menu__item burger-menu__item--active">
+              <a href="#">Ремонт техники</a>
+            </li>
+            <li class="burger-menu__item"><a href="#">Услуги и сервисы</a></li>
+            <li class="burger-menu__item">
+              <a href="#">Корпоративным клиентам</a>
+            </li>
+            <li class="burger-menu__item"><a href="#">Продавцам техники</a></li>
+            <li class="burger-menu__item"><a href="#">Партнерам</a></li>
+            <li class="burger-menu__item"><a href="#">Производителям</a></li>
+            <li class="burger-menu__item">
+              <a href="#">Наши сервисные центры</a>
+            </li>
+            <li class="burger-menu__item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="burger-menu__feedback feedback-icon">
+          <button
+            type="button"
+            class="feedback-icon__item feedback-icon__item--phone icon"
+          ></button>
+          <button
+            type="button"
+            class="feedback-icon__item feedback-icon__item--message icon"
+          ></button>
+          <button
+            type="button"
+            class="feedback-icon__item feedback-icon__item--contact icon"
+          ></button>
+        </div>
+        <div class="burger-menu__email">
+          <a href="mailto:mail@cps.com">mail@cps.com</a>
+        </div>
+        <div class="burger-menu__phone">
+          <a href="tel:8 800 890 8900">8 800 890 8900</a>
+        </div>
+        <ul class="burger-menu__lang-list">
+          <li class="burger-menu__lang-item burger-menu__lang-item--active">
+            <button type="button">RU</button>
+          </li>
+          <li class="burger-menu__lang-item">
+            <button type="button">EN</button>
+          </li>
+          <li class="burger-menu__lang-item">
+            <button type="button">CH</button>
+          </li>
+        </ul>
+      </div>
+      <section class="about">
+        <div class="about__wrapper container">
+          <div class="about__header">
+            <h1 class="about__title">Услуги и сервисы</h1>
+            <ul class="about__icon-list">
+              <button
+                type="button"
+                class="about__icon-item about__icon-item--tools icon"
+              >
+                Оставить заявку
+              </button>
+              <button
+                type="button"
+                class="about__icon-item about__icon-item--check icon"
+              >
+                Статус ремонта
+              </button>
+            </ul>
+          </div>
+          <ul class="about__services-list">
+            <li class="about__services-item">
+              <a href="/">Ремонтируемые устройства</a>
+            </li>
+            <li class="about__services-item">
+              <a href="/">Дополнительные услуги</a>
+            </li>
+            <li class="about__services-item"><a href="/">Цены на услуги</a></li>
+            <li class="about__services-item">
+              <a href="/">Адреса сервисных центров</a>
+            </li>
+            <li class="about__services-item">
+              <a href="/">Специальные цены</a>
+            </li>
+            <li class="about__services-item"><a href="/">Отзывы</a></li>
+          </ul>
+          <div class="about__container">
+            <div class="about__text">
+              <p class="about__text--top">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+              </p>
+              <p class="about__text about__text--middle">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера
+              </p>
+              <p class="about__text about__text--bottom">
+                что подтверждает большое количество постоянных клиентов. Мы
+                гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                очередь, советуют нас родным и близким.
+              </p>
+              <button type="button" class="about__further">Читать далее</button>
+            </div>
+            <div class="about__img">
+              <img src="./img/service.jpg" alt="service" height="176" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer"></footer>
+
+    <!-- <script src="./js/index.js"></script> -->
+  </body>
 </html>

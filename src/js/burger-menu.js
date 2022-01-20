@@ -1,11 +1,7 @@
-import "../scss/style.scss";
-
 const burgerOpen = document.querySelector(".page-header__burger");
 const burgerClose = document.querySelector(".burger-menu__close");
 const burgermMenu = document.querySelector(".burger-menu");
 const body = document.body;
-let { clientWidth } = document.body;
-
 
 burgerOpen.onclick = () => {
   burgermMenu.classList.add("active");
@@ -24,3 +20,5 @@ body.onclick = ({ target }) => {
     burgermMenu.classList.remove("active");
   }
 };
+
+

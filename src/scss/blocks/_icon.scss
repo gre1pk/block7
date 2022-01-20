@@ -1,0 +1,12 @@
+.icon {
+  width: 40px;
+  height: 40px;
+
+  &:hover {
+    filter: opacity(30%);
+  }
+  
+  &:active {
+    filter: opacity(70%);
+  }
+}

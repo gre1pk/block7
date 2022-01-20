@@ -1,17 +1,14 @@
-$bgColor: #24292e;
-$text: #fff;
+//base
+@import "base/fonts";
+@import "base/variables";
+@import "base/global";
+@import "base/mixin";
+@import "base/burger-menu";
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+//blocks
+@import "blocks/page";
+@import "blocks/conteiner";
+@import "blocks/page-header";
+@import "blocks/about";
+@import "blocks/icon";
+@import "blocks/feedback-icon";
