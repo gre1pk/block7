@@ -1,0 +1,57 @@
+.brends {
+  &__wrapper {
+    padding-bottom: 24px;
+
+    @include media-tablet {
+      padding-bottom: 24px;
+    }
+
+    @include media-notbook {
+      padding-bottom: 24px;
+    }
+  }
+
+  // &__slide-list {
+  // }
+
+  &__slide-item {
+    background-color: $lite-color;
+    width: 240px;
+    height: 72px;
+    padding: 16px;
+    background-repeat: no-repeat;
+    background-position: center left;
+
+    &--lenov {
+      background-image: url(../img/Bitmap.svg);
+    }
+
+    &--sams {
+      background-image: url(../img/Bitmap2.svg);
+    }
+
+    &--apple {
+      background-image: url(../img/Bitmap3.svg);
+    }
+
+    &--view {
+      background-image: url(../img/Bitmap4.svg);
+    }
+
+    &--bosh {
+      background-image: url(../img/Bitmap5.svg);
+    }
+
+    &--hp {
+      background-image: url(../img/Bitmap6.svg);
+    }
+
+    &--acer {
+      background-image: url(../img/Bitmap7.svg);
+    }
+
+    &--sony {
+      background-image: url(../img/Bitmap8.svg);
+    }
+  }
+}

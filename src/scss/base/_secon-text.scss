@@ -1,0 +1,23 @@
+.secondary-text {
+  border-top: 1px solid $border-color-lite;
+  padding: 16px 16px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $grey-text-color;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #f8f8f8 0%, #ffffff);
+
+  @include media-tablet {
+    padding: 16px 24px;
+  }
+
+  @include media-notbook {
+    padding: 16px 32px;
+  }
+  
+  @include media-desktop {
+    margin: 0 auto;
+    max-width: $desktop-width;
+  }
+}

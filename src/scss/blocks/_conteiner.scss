@@ -2,6 +2,7 @@
   margin: 0 auto;
   padding: 0 16px;
   max-width: 1440px;
+  background-color: $block-color;
 
   @include media-tablet {
     padding: 0 24px;
