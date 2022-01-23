@@ -1,4 +1,8 @@
 .about {
+  &__wrapper {
+    position: relative;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -13,7 +17,7 @@
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       border-left: 4px solid $border-color;
       height: 40px;
       border-radius: 0 4px 4px 0;
@@ -33,7 +37,7 @@
   &__icon-list {
     display: none;
 
-    @include media-notbook {
+    @include media-desktop {
       display: flex;
       justify-content: space-between;
       width: 400px;
@@ -130,15 +134,7 @@
 
   &__further {
     display: block;
-    margin: 16px 0 16px 32px;
-    font-size: 16px;
-    line-height: 24px;
-    background-color: inherit;
-
-    &::before {
-      content: url(../img/ic/arr.svg);
-      margin-right: 14px;
-    }
+    margin: 16px 0 0 0;
   }
 
   &__img {
