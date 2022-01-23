@@ -29,66 +29,67 @@
       </div>
     </header>
     <main class="main">
-      <div class="burger-menu burger-menu__wrapper">
-        <div class="burger-menu__header">
-          <button type="button" class="burger-menu__close icon"></button>
-          <a class="burger-menu__logo" href="/"
-            ><img height="50" src="./img/logo.svg" alt="logo"
-          /></a>
-          <button type="button" class="burger-menu__search icon"></button>
-        </div>
-        <nav>
-          <ul class="burger-menu__list">
-            <li class="burger-menu__item burger-menu__item--active">
-              <a href="#">Ремонт техники</a>
-            </li>
-            <li class="burger-menu__item"><a href="#">Услуги и сервисы</a></li>
-            <li class="burger-menu__item">
-              <a href="#">Корпоративным клиентам</a>
-            </li>
-            <li class="burger-menu__item"><a href="#">Продавцам техники</a></li>
-            <li class="burger-menu__item"><a href="#">Партнерам</a></li>
-            <li class="burger-menu__item"><a href="#">Производителям</a></li>
-            <li class="burger-menu__item">
-              <a href="#">Наши сервисные центры</a>
-            </li>
-            <li class="burger-menu__item"><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="burger-menu__feedback feedback-icon">
-          <button
-            type="button"
-            class="feedback-icon__item feedback-icon__item--phone icon"
-          ></button>
-          <button
-            type="button"
-            class="feedback-icon__item feedback-icon__item--message icon"
-          ></button>
-          <button
-            type="button"
-            class="feedback-icon__item feedback-icon__item--contact icon"
-          ></button>
-        </div>
-        <div class="burger-menu__email">
-          <a href="mailto:mail@cps.com">mail@cps.com</a>
-        </div>
-        <div class="burger-menu__phone">
-          <a href="tel:8 800 890 8900">8 800 890 8900</a>
-        </div>
-        <ul class="burger-menu__lang-list">
-          <li class="burger-menu__lang-item burger-menu__lang-item--active">
-            <button type="button">RU</button>
-          </li>
-          <li class="burger-menu__lang-item">
-            <button type="button">EN</button>
-          </li>
-          <li class="burger-menu__lang-item">
-            <button type="button">CH</button>
-          </li>
-        </ul>
-      </div>
+
       <section class="about">
         <div class="about__wrapper container">
+          <div class="burger-menu burger-menu__wrapper">
+            <div class="burger-menu__header">
+              <button type="button" class="burger-menu__close icon"></button>
+              <a class="burger-menu__logo" href="/"
+                ><img height="50" src="./img/logo.svg" alt="logo"
+              /></a>
+              <button type="button" class="burger-menu__search icon"></button>
+            </div>
+            <nav>
+              <ul class="burger-menu__list">
+                <li class="burger-menu__item burger-menu__item--active">
+                  <a href="#">Ремонт техники</a>
+                </li>
+                <li class="burger-menu__item"><a href="#">Услуги и сервисы</a></li>
+                <li class="burger-menu__item">
+                  <a href="#">Корпоративным клиентам</a>
+                </li>
+                <li class="burger-menu__item"><a href="#">Продавцам техники</a></li>
+                <li class="burger-menu__item"><a href="#">Партнерам</a></li>
+                <li class="burger-menu__item"><a href="#">Производителям</a></li>
+                <li class="burger-menu__item">
+                  <a href="#">Наши сервисные центры</a>
+                </li>
+                <li class="burger-menu__item"><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="burger-menu__feedback feedback-icon">
+              <button
+                type="button"
+                class="feedback-icon__item feedback-icon__item--phone icon"
+              ></button>
+              <button
+                type="button"
+                class="feedback-icon__item feedback-icon__item--message icon"
+              ></button>
+              <button
+                type="button"
+                class="feedback-icon__item feedback-icon__item--contact icon"
+              ></button>
+            </div>
+            <div class="burger-menu__email">
+              <a href="mailto:mail@cps.com">mail@cps.com</a>
+            </div>
+            <div class="burger-menu__phone">
+              <a href="tel:8 800 890 8900">8 800 890 8900</a>
+            </div>
+            <ul class="burger-menu__lang-list">
+              <li class="burger-menu__lang-item burger-menu__lang-item--active">
+                <button type="button">RU</button>
+              </li>
+              <li class="burger-menu__lang-item">
+                <button type="button">EN</button>
+              </li>
+              <li class="burger-menu__lang-item">
+                <button type="button">CH</button>
+              </li>
+            </ul>
+          </div>
           <div class="about__header">
             <h1 class="about__title">Услуги и сервисы</h1>
             <ul class="about__icon-list">
@@ -138,7 +139,7 @@
                 гордимся тем, что к нам обращаются по рекомендациям и, в свою
                 очередь, советуют нас родным и близким.
               </p>
-              <button type="button" class="about__further">Читать далее</button>
+              <button type="button" class="about__further more-button">Читать далее</button>
             </div>
             <div class="about__img">
               <img src="./img/service.jpg" alt="service" height="176" />
@@ -183,30 +184,20 @@
                   <a href="/" class="brends__link icon"></a>
                 </div>
               </li>
-              <li class="swiper-slide">
+              <li class="swiper-slide brends__slide-item--hidden">
                 <div class="brends__slide-item brends__slide-item--acer">
                   <a href="/" class="brends__link icon"></a>
                 </div>
               </li>
-              <li class="swiper-slide">
+              <li class="swiper-slide brends__slide-item--hidden">
                 <div class="brends__slide-item brends__slide-item--sony">
-                  <a href="/" class="brends__link icon"></a>
-                </div>
-              </li>
-              <li class="swiper-slide">
-                <div
-                  class="
-                    brends__slide-item
-                    brends__slide-item--lenov
-                    brends__slide-item--hidden
-                  "
-                >
                   <a href="/" class="brends__link icon"></a>
                 </div>
               </li>
             </ul>
             <div class="swiper-pagination"></div>
           </div>
+          <button class="brends__more more-button">Показать все</button>
         </div>
       </section>
     </main>
