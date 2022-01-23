@@ -54,7 +54,9 @@ function catalogSliderInit() {
 
 function catalogSliderDestroy() {
   if (catalogSlider) {
-    catalogSlider.destroy();
+    catalogSlider.forEach((e) => {
+      e.destroy();
+    });
     catalogSlider = null;
   }
 }
