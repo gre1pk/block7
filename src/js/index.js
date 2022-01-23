@@ -7,6 +7,9 @@ const burgermMenu = document.querySelector(".burger-menu");
 const body = document.body;
 const brendsMore = document.querySelector(".brends__more");
 const brendsList = document.querySelector(".brends__slide-list");
+const technicsMore = document.querySelector(".technics__more");
+const technicsList = document.querySelector(".technics__slide-list");
+
 //burger
 burgerOpen.onclick = () => {
   burgermMenu.classList.add("active");
@@ -78,36 +81,55 @@ function renderSwiper() {
   }
 }
 
+// technics more
+technicsMore.onclick = () => {
+  togleMore(technicsMore, "tehnic");
+};
+
 // brends more
 
 brendsMore.onclick = () => {
-  if (brendsMore.classList.contains("more-button__close")) {
-    brendsMore.textContent = "Показать все";
-    brendsMore.classList.remove("more-button__close");
-    const itemList = document.querySelectorAll(".clone-item");
-    removeMore(itemList);
-  } else {
-    brendsMore.textContent = "Скрыть";
-    brendsMore.classList.add("more-button__close");
-    addMoreBrends();
-  }
+  togleMore(brendsMore, "brend");
 };
 
-function addMoreBrends() {
-  const brendsClone = brendsList.cloneNode(true);
-  // brendsClone.classList.add("asdasda");
+// add item list
 
+function addMoreBrends(name) {
+  let list;
+  if (name === "tehnic") {
+    list = technicsList;
+  }
+  if (name === "brend") {
+    list = brendsList;
+  }
+
+  const brendsClone = list.cloneNode(true);
   const brendsItems = brendsClone.children;
   for (let i = 0; i < brendsItems.length; i++) {
     const li = brendsItems[i];
     li.classList.add("clone-item");
-    brendsList.appendChild(li);
+    list.appendChild(li);
   }
 }
 
-//уневерсальная функция удаления добавленный элементов /сделать так-же к добавить
+// remove item list
+
 function removeMore(itemList) {
   for (let i = 0; i < itemList.length; i++) {
     itemList[i].remove();
+  }
+}
+
+// togle more button
+function togleMore(button, name) {
+  if (button.classList.contains("more-button__close")) {
+    button.textContent = "Показать все";
+    button.classList.remove("more-button__close");
+    const itemList = document.querySelectorAll(".clone-item");
+    removeMore(itemList);
+  } else {
+    button.textContent = "Скрыть";
+    button.classList.add("more-button__close");
+    addMoreBrends(name);
   }
 }
