@@ -12,6 +12,15 @@ module.exports = {
     filename: "./js/bundle.js",
   },
 
+  devServer: {
+    // hot: true,
+    inline: true,
+    host: "localhost",
+    port: 8083,
+    watchOptions: {
+      poll: true,
+    },
+  },
   // Source maps для удобства отладки
   devtool: "source-map",
 
