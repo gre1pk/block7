@@ -3,5 +3,10 @@
   margin: 0 auto;
   min-width: 320px;
   color: $text-color;
-  position: relative;
+}
+
+.main {
+  @include media-desktop {
+     margin: 0 0 0 320px;
+  }
 }

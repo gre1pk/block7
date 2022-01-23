@@ -12,8 +12,19 @@
   background-color: $lite-color;
   width: 320px;
   z-index: 10;
-  top: 0;
+  top: -94px;
   left: 0;
+
+  @include media-tablet {
+    top: -106px;
+  }
+
+  @include media-desktop {
+    transition: none;
+    transform: translateX(0);
+    left: -320px;
+    top: 0;
+  }
 
   &__wrapper {
     padding: 18px 24px 32px;
@@ -28,6 +39,10 @@
     background-image: url(../img/ic/close.svg);
     margin-right: 16px;
     border: none;
+
+    @include media-desktop {
+      display: none;
+    }
   }
 
   &__search {
@@ -37,6 +52,10 @@
 
   &__list {
     margin: 20px 0 32px;
+
+    @include media-tablet {
+      margin: 20px 0 240px;
+    }
   }
 
   &__item {
@@ -55,7 +74,7 @@
 
     &--active {
       &::before {
-        content: '';
+        content: "";
         border-left: 4px solid $border-color;
         height: 32px;
         border-radius: 0 4px 4px 0;
