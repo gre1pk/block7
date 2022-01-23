@@ -139,7 +139,7 @@
 
   &__img {
     position: relative;
-    height: 176px;
+    height: 200px;
 
     @include media-tablet {
       height: 208px;
@@ -156,13 +156,14 @@
 
     & img {
       width: 100vw;
-      height: 100%;
+      height: 88%;
       position: absolute;
       left: -16px;
 
       @include media-tablet {
         position: static;
         width: 100%;
+        height: 100%;
         border-radius: 6px;
       }
     }
