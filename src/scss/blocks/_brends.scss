@@ -3,7 +3,7 @@
     padding-bottom: 24px;
 
     @include media-tablet {
-      padding-bottom: 24px;
+      padding: 24px 0;
     }
 
     @include media-notbook {
@@ -11,8 +11,23 @@
     }
   }
 
-  // &__slide-list {
-  // }
+  &__swiper {
+    max-width: 997px;
+
+    @include media-notbook {
+      max-width: 1230px;
+    }
+  }
+
+  &__slide-list {
+    margin: 16px 0;
+
+    @include media-tablet {
+      margin: 0 24px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
 
   &__slide-item {
     background-color: $lite-color;
@@ -20,7 +35,8 @@
     height: 72px;
     padding: 16px;
     background-repeat: no-repeat;
-    background-position: center left;
+    background-position: 16px center;
+    border-radius: 6px;
 
     &--lenov {
       background-image: url(../img/Bitmap.svg);
@@ -52,6 +68,36 @@
 
     &--sony {
       background-image: url(../img/Bitmap8.svg);
+    }
+
+    &--hidden {
+      @include media-tablet {
+        display: none;
+      }
+
+      @include media-notbook {
+        display: block;
+      }
+    }
+
+    @include media-tablet {
+      width: 240px;
+      margin: 0 0 16px 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    background-image: url(../img/ic/go.svg);
+    margin-left: auto;
+  }
+
+  &__more {
+    display: none;
+    margin: 0 0 0 24px;
+
+    @include media-tablet {
+      display: block;
     }
   }
 }
