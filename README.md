@@ -1,3 +1,6 @@
+# Link to Deploy: https://gre1pk.github.io/block7/
+
+
 # Webpack Static Site Starter Kit
 
 ## Features
