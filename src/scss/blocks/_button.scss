@@ -1,0 +1,21 @@
+.btn {
+  height: 32px;
+  color: $lite-color;
+  padding: 4px 40px 4px 12px;
+  background-color: $main-color;
+  border-radius: 16px;
+  background-image: url(../img/ic/dropdown.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 16px) center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: $font-bold;
+
+  &:hover {
+    filter: opacity(30%);
+  }
+
+  &:active {
+    filter: opacity(70%);
+  }
+}
