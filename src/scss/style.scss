@@ -6,7 +6,6 @@
 @import "base/burger-menu";
 @import "base/slider";
 @import "base/secon-text";
-@import "../../node_modules/swiper/swiper-bundle.css";
 
 //blocks
 @import "blocks/page";
@@ -18,3 +17,9 @@
 @import "blocks/brends";
 @import "blocks/more-button";
 @import "blocks/technics";
+@import "blocks/brends";
+@import "blocks/service-praice";
+@import "blocks/button";
+
+//plugins
+@import "../../node_modules/swiper/swiper-bundle.css";

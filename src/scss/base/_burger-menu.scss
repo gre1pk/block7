@@ -63,6 +63,10 @@
     padding-bottom: 24px;
     position: relative;
 
+    @include media-tablet {
+      padding-bottom: 32px;
+    }
+
     &:hover {
       transition: 200ms all;
       opacity: 0.4;
