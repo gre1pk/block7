@@ -1,6 +1,10 @@
 .service-praice {
   &__wrapper {
     padding-bottom: 24px;
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1920px;
+    background-color: $block-color;
 
     @include media-tablet {
       padding: 24px 0;
