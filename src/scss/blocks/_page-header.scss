@@ -17,20 +17,15 @@
   }
 
   &__burger {
-    background-image: url(../img/ic/burger.svg);
     margin-right: 16px;
   }
-  
+
 
   &__logo {
     flex-grow: 2;
-    max-width: 120px;
-    margin: 0 auto 0 0;
   }
 
-  &__icon-list {
-    display: flex;
-    justify-content: space-between;
+  &__icon-wrapper {
     width: 96px;
     position: relative;
 

@@ -46,13 +46,12 @@
     }
   }
 
-  &__icon-list {
+  &__icon-wrapper {
     display: none;
 
     @include media-desktop {
-      display: flex;
-      justify-content: space-between;
-      width: 400px;
+      display: block;
+      width: 373px;
 
       & button {
         background-color: $block-color;
@@ -60,48 +59,13 @@
         line-height: 24px;
         width: 176px;
         padding-right: 40px;
-        background-repeat: no-repeat;
         background-position: right;
       }
     }
   }
 
-  &__icon-item {
-    &--tools {
-      background-image: url(../img/ic/repair.svg);
-    }
-
-    &--check {
-      background-image: url(../img/ic/checkstatus.svg);
-    }
-  }
-
-  &__services-list {
-    display: flex;
-    overflow-x: scroll;
-    font-size: 16px;
+  &__services-wrapper {
     margin: 0 0 24px;
-    color: $grey-text-color;
-
-    @include media-notbook {
-      overflow-x: inherit;
-      flex-wrap: wrap;
-    }
-  }
-
-  &__services-item {
-    color: $grey-text-color;
-    margin-right: 20px;
-    white-space: nowrap;
-    padding: 8px;
-
-    &:hover {
-      background-color: $lite-color;
-      border: 2px solid $border-color;
-      border-radius: 6px;
-      padding: 6px;
-      cursor: pointer;
-    }
   }
 
   &__container {

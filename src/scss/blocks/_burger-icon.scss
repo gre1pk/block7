@@ -1,6 +1,7 @@
-.icon {
+.burger-icon {
   width: 40px;
   height: 40px;
+  background-image: url(../img/ic/burger.svg);
 
   &:hover {
     filter: opacity(30%);
@@ -10,6 +11,3 @@
     filter: opacity(70%);
   }
 }
-
-
-

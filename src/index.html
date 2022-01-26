@@ -13,29 +13,29 @@
   <body class="page">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <button type="button" class="page-header__burger icon"></button>
-        <a href="/" class="page-header__logo"
+        <button type="button" class="page-header__burger burger-icon"></button>
+        <a href="/" class="page-header__logo logo"
           ><img height="50" src="./img/logo.svg" alt="logo"
         /></a>
-        <div class="page-header__icon-list">
+        <div class="page-header__icon-wrapper list-icon">
           <button
             type="button"
-            class="page-header__icon-item page-header__icon-item--tools icon"
+            class="list-icon__item list-icon__item--tools"
           ></button>
           <button
             type="button"
-            class="page-header__icon-item page-header__icon-item--check icon"
+            class="list-icon__item list-icon__item--check"
           ></button>
         </div>
       </div>
     </header>
     <main class="main">
       <section class="about">
-        <div class="about__wrapper ">
+        <div class="about__wrapper">
           <div class="burger-menu burger-menu__wrapper">
             <div class="burger-menu__header">
               <button type="button" class="burger-menu__close icon"></button>
-              <a class="burger-menu__logo" href="/"
+              <a class="burger-menu__logo logo" href="/"
                 ><img height="50" src="./img/logo.svg" alt="logo"
               /></a>
               <button type="button" class="burger-menu__search icon"></button>
@@ -98,40 +98,43 @@
           </div>
           <div class="about__header">
             <h1 class="about__title">Услуги и сервисы</h1>
-            <ul class="about__icon-list">
-              <button
-                type="button"
-                class="about__icon-item about__icon-item--tools icon"
-              >
-                Оставить заявку
-              </button>
-              <button
-                type="button"
-                class="about__icon-item about__icon-item--check icon"
-              >
-                Статус ремонта
-              </button>
-            </ul>
+            <div class="about__icon-wrapper">
+              <ul class="list-icon">
+                <button
+                  type="button"
+                  class="list-icon__item list-icon__item--tools"
+                >
+                  Оставить заявку
+                </button>
+                <button
+                  type="button"
+                  class="list-icon__item list-icon__item--check"
+                >
+                  Статус ремонта
+                </button>
+              </ul>
+            </div>
           </div>
-          <ul class="about__services-list">
-            <li class="about__services-item">
+          <ul class="about__services-wrapper services-list">
+            <li class="services-list__item">
               <a href="/">Ремонтируемые устройства</a>
             </li>
-            <li class="about__services-item">
+            <li class="services-list__item">
               <a href="/">Дополнительные услуги</a>
             </li>
-            <li class="about__services-item"><a href="/">Цены на услуги</a></li>
-            <li class="about__services-item">
+            <li class="services-list__item"><a href="/">Цены на услуги</a></li>
+            <li class="services-list__item">
               <a href="/">Адреса сервисных центров</a>
             </li>
-            <li class="about__services-item">
+            <li class="services-list__item">
               <a href="/">Специальные цены</a>
             </li>
-            <li class="about__services-item"><a href="/">Отзывы</a></li>
+            <li class="services-list__item"><a href="/">Отзывы</a></li>
           </ul>
+
           <div class="about__container">
             <div class="about__text">
-              <p class="about__text--top">
+              <p class=" about__text--top">
                 Мы являемся авторизованным сервисным центром по ремонту техники
                 Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
                 официальной гарантией производителя.
@@ -258,7 +261,8 @@
               <li class="swiper-slide service-praice__slide-item">
                 <div class="service-praice__item-wrapper">
                   <p class="service-praice__name">
-                    <b class="service-praice__text-gray">Ремонтные услуги</b><br />
+                    <b class="service-praice__text-gray">Ремонтные услуги</b
+                    ><br />
                     Тестирование с выдачей технического заключения
                   </p>
                   <p class="service-praice__price">
