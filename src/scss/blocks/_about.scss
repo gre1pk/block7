@@ -1,5 +1,5 @@
 .about {
-  &__wrapper {
+  &__container {
     position: relative;
   }
 
@@ -52,11 +52,11 @@
     }
   }
 
-  &__services-wrapper {
+  &__services-list {
     margin: 0 0 24px;
   }
 
-  &__container {
+  &__text-container {
     @include media-tablet {
       display: flex;
       justify-content: space-between;
@@ -96,7 +96,7 @@
     }
   }
 
-  &__further {
+  &__more-button {
     display: block;
     margin: 16px 0 0 0;
   }

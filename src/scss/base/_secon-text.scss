@@ -15,9 +15,9 @@
   @include media-notbook {
     padding: 16px 32px;
   }
-  
+
   @include media-desktop {
     margin: 0 auto;
-    max-width: $desktop-width;
+    max-width: 1920px;
   }
 }

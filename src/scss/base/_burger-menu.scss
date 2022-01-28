@@ -15,6 +15,7 @@
   top: -94px;
   left: 0;
   min-height: 100vh;
+  padding: 18px 24px 32px;
 
   @include media-tablet {
     top: -106px;
@@ -27,16 +28,14 @@
     top: 0;
   }
 
-  &__wrapper {
-    padding: 18px 24px 32px;
-  }
+
 
   &__header {
     display: flex;
     align-items: center;
   }
 
-  &__close {
+  &__burger-close {
     background-image: url(../img/ic/close.svg);
     margin-right: 16px;
     border: none;
@@ -46,12 +45,12 @@
     }
   }
 
-  &__search {
-    background-image: url(../img/ic/search.svg);
+  &__search-icon {
+
     margin: 0 0 0 auto;
   }
 
-  &__list {
+  &__navigation {
     margin: 20px 0 32px;
 
     @include media-tablet {
@@ -59,44 +58,7 @@
     }
   }
 
-  &__item {
-    padding-bottom: 24px;
-    position: relative;
 
-    @include media-tablet {
-      padding-bottom: 32px;
-    }
-
-    &:hover {
-      transition: 200ms all;
-      opacity: 0.4;
-    }
-
-    & a {
-      letter-spacing: -0.2px;
-      color: $text-color;
-    }
-
-    &--active {
-      &::before {
-        content: "";
-        border-left: 4px solid $border-color;
-        height: 32px;
-        border-radius: 0 4px 4px 0;
-        left: -25px;
-        top: -8px;
-        position: absolute;
-      }
-
-      & a {
-        opacity: 0.6;
-      }
-    }
-  }
-
-  &__item:last-child {
-    padding-bottom: 0;
-  }
 
   &__email {
     margin-top: 16px;

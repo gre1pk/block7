@@ -1,0 +1,22 @@
+.repair-technicals {
+  &__container {
+    padding-bottom: 24px;
+
+    @include media-tablet {
+      padding: 24px 0;
+    }
+
+    @include media-notbook {
+      padding-bottom: 24px;
+    }
+  }
+
+  &__more-button  {
+    display: none;
+    margin: 0 0 0 24px;
+
+    @include media-tablet {
+      display: block;
+    }
+  }
+}

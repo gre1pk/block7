@@ -1,0 +1,28 @@
+.technics-list {
+  &__item {
+    text-align: left;
+    vertical-align: top;
+    background-color: $lite-color;
+    width: 240px;
+    height: 160px;
+    padding: 16px;
+    border-radius: 6px;
+    margin-bottom: 24px;
+
+    @include media-tablet {
+      width: 224px;
+      margin: 0 0 16px 16px;
+    }
+
+    @include media-notbook {
+      width: 240px;
+    }
+  }
+
+  &__link-go {
+    display: block;
+    background-image: url(../img/ic/go.svg);
+    margin-left: auto;
+    margin-top: 65px;
+  }
+}

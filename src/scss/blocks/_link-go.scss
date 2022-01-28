@@ -1,0 +1,15 @@
+.link-go {
+  display: block;
+  background-image: url(../img/ic/go.svg);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+
+  &:hover {
+    filter: opacity(30%);
+  }
+
+  &:active {
+    filter: opacity(70%);
+  }
+}

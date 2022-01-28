@@ -1,0 +1,41 @@
+.navigation {
+  &__item {
+    padding-bottom: 24px;
+    position: relative;
+
+    @include media-tablet {
+      padding-bottom: 32px;
+    }
+
+    &:hover {
+      transition: 200ms all;
+      opacity: 0.4;
+    }
+
+    &__link {
+      letter-spacing: -0.2px;
+      color: $text-color;
+    }
+
+    &__item:last-child {
+      padding-bottom: 0;
+    }
+
+    &--active {
+      color: $grey-text-color;
+      &::before {
+        content: "";
+        border-left: 4px solid $border-color;
+        height: 32px;
+        border-radius: 0 4px 4px 0;
+        left: -25px;
+        top: -8px;
+        position: absolute;
+      }
+
+      &__link {
+        opacity: 0.6;
+      }
+    }
+  }
+}

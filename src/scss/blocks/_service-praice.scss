@@ -1,5 +1,5 @@
 .service-praice {
-  &__wrapper {
+  &__container {
     padding-bottom: 24px;
 
     @include media-tablet {
@@ -16,6 +16,10 @@
 
     @include media-notbook {
       max-width: 1230px;
+    }
+
+    @include media-desktop {
+      max-width: 1920px;
     }
   }
 
@@ -35,7 +39,6 @@
 
   &__slide-item {
     width: 260px;
-    // height: 200px;
     font-size: 14px;
     line-height: 18px;
     /* or 129% */

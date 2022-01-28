@@ -1,12 +1,12 @@
 import "../scss/style.scss";
 import Swiper, { Pagination, Navigation } from "swiper";
 
-const burgerOpen = document.querySelector(".page-header__burger");
-const burgerClose = document.querySelector(".burger-menu__close");
+const burgerOpen = document.querySelector(".burger-icon");
+const burgerClose = document.querySelector(".burger-close");
 const burgermMenu = document.querySelector(".burger-menu");
 const body = document.body;
-const brendsMore = document.querySelector(".brends__more");
-const technicsMore = document.querySelector(".technics__more");
+const brendsMore = document.querySelector(".repair-brend__more-button");
+const technicsMore = document.querySelector(".repair-technicals__more-button");
 
 //burger
 burgerOpen.onclick = () => {
@@ -21,7 +21,7 @@ body.onclick = ({ target }) => {
   if (
     !target.closest(".burger-menu") &&
     burgermMenu.classList.contains("active") &&
-    !target.closest(".page-header__burger")
+    !target.closest(".burger-icon")
   ) {
     burgermMenu.classList.remove("active");
   }
@@ -49,6 +49,10 @@ const catalogSliderInit = () => {
       scrollbar: {
         el: ".swiper-scrollbar",
       },
+
+      slideClass: "swiper__slide",
+
+      wrapperClass: "swiper__wrapper",
     });
   }
 };
@@ -93,8 +97,8 @@ brendsMore.onclick = () => {
 // add item list
 
 const showMore = (name) => {
-  const brendsList = document.querySelector(".brends__slide-list");
-  const technicsList = document.querySelector(".technics__slide-list");
+  const brendsList = document.querySelector(".brends-list");
+  const technicsList = document.querySelector(".technics-list");
   let list;
   if (name === "tehnic") {
     list = technicsList;

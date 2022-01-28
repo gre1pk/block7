@@ -11,5 +11,17 @@
   }
 }
 
+.search-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/ic/search.svg);
 
+  &:hover {
+    filter: opacity(30%);
+  }
+
+  &:active {
+    filter: opacity(70%);
+  }
+}
 

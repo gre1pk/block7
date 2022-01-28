@@ -14,16 +14,19 @@
 @import "blocks/about";
 @import "blocks/icon";
 @import "blocks/feedback-icon";
-@import "blocks/brends";
+@import "blocks/repair-brend";
+@import "blocks/brends-list";
 @import "blocks/more-button";
-@import "blocks/technics";
-@import "blocks/brends";
+@import "blocks/repair-technicals";
 @import "blocks/service-praice";
 @import "blocks/button";
 @import "blocks/list-icon";
 @import "blocks/services-list";
 @import "blocks/logo";
 @import "blocks/burger-icon";
+@import "blocks/navigation";
+@import "blocks/link-go";
+@import "blocks/technics-list.scss";
 
 //plugins
 @import "../../node_modules/swiper/swiper-bundle.css";
