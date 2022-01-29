@@ -1,74 +1,13 @@
 .service-praice {
   &__container {
-    padding-bottom: 24px;
+    padding: 16px 0 24px;
 
     @include media-tablet {
       padding: 24px 0;
     }
 
     @include media-notbook {
-      padding-bottom: 24px;
+      padding: 24px 0 50px;
     }
-  }
-
-  &__swiper {
-    max-width: 997px;
-
-    @include media-notbook {
-      max-width: 1230px;
-    }
-
-    @include media-desktop {
-      max-width: 1920px;
-    }
-  }
-
-  &__table-header {
-    display: none;
-  }
-
-  &__slide-list {
-    margin: 16px 0;
-
-    @include media-tablet {
-      margin: 0 24px;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-  }
-
-  &__slide-item {
-    width: 260px;
-    font-size: 14px;
-    line-height: 18px;
-    /* or 129% */
-
-    letter-spacing: 0.2px;
-
-    color: $text-color;
-  }
-
-  &__item-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-    vertical-align: top;
-    background-color: $lite-color;
-    width: 260px;
-    height: 200px;
-    padding: 16px;
-    border-radius: 6px;
-    margin-bottom: 24px;
-  }
-
-  &__time {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__text-gray {
-    color: $grey-text-color;
   }
 }

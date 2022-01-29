@@ -1,13 +1,13 @@
 .repair-technicals {
   &__container {
-    padding-bottom: 24px;
+    padding: 16px 0 24px;
 
     @include media-tablet {
       padding: 24px 0;
     }
 
     @include media-notbook {
-      padding-bottom: 24px;
+      padding: 24px 0 50px;
     }
   }
 
