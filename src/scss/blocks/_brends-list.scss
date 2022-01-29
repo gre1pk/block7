@@ -20,7 +20,7 @@
     &--lenov {
       background-image: url(../img/Bitmap.svg);
     }
-    
+
     &--sams {
       background-image: url(../img/Bitmap2.svg);
     }
@@ -52,5 +52,9 @@
 
   &__link-go {
     margin-left: auto;
+  }
+
+  &__more-item {
+    display: none;
   }
 }

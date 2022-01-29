@@ -11,15 +11,6 @@
 }
 
 .swiper {
-  max-width: 997px;
-
-  @include media-notbook {
-    max-width: 1450px;
-  }
-
-  @include media-desktop {
-    max-width: 1920px;
-  }
 
   &__wrapper {
     display: flex;

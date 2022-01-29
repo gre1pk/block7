@@ -4,7 +4,7 @@
 @import "base/global";
 @import "base/mixin";
 @import "base/burger-menu";
-@import "base/slider";
+@import "base/swiper";
 @import "base/secon-text";
 
 //blocks
@@ -19,7 +19,7 @@
 @import "blocks/more-button";
 @import "blocks/repair-technicals";
 @import "blocks/service-praice";
-@import "blocks/button";
+@import "blocks/btn";
 @import "blocks/list-icon";
 @import "blocks/services-list";
 @import "blocks/logo";
@@ -28,6 +28,7 @@
 @import "blocks/link-go";
 @import "blocks/technics-list";
 @import "blocks/praice-list";
+@import "blocks/page-footer";
 
 //plugins
 @import "../../node_modules/swiper/swiper-bundle.css";

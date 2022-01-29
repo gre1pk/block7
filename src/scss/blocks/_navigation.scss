@@ -23,6 +23,7 @@
 
     &--active {
       color: $grey-text-color;
+      
       &::before {
         content: "";
         border-left: 4px solid $border-color;
