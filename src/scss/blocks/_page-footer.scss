@@ -1,0 +1,45 @@
+.page-footer {
+  background-color: #f8f8f8;
+  padding: 0 0 19px 0;
+  border-top: 1px solid $border-color;
+
+  @include media-tablet {
+    padding: 32px 0 25px 0;
+  }
+
+  @include media-desktop {
+    margin: 0 0 0 320px;
+  }
+
+  &__container {
+    @include media-tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__text {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: $grey-text-color;
+    opacity: 0.72;
+
+    @include media-tablet {
+      &--skript {
+        flex-basis: 33%;
+        text-align: left;
+      }
+
+      &--prav {
+        flex-basis: 33%;
+      }
+
+      &--info {
+        flex-basis: 33%;
+        text-align: right;
+      }
+    }
+  }
+}
