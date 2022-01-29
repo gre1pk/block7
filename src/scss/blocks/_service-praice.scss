@@ -1,13 +1,53 @@
 .service-praice {
+  padding-bottom: 40px;
+  background-color: #f8f8f8;
+
+  @include media-tablet {
+    padding-bottom: 47px;
+  }
+
+  @include media-desktop {
+    padding-bottom: 50px;
+  }
+
   &__container {
     padding: 16px 0 24px;
 
     @include media-tablet {
-      padding: 24px 0;
+      padding: 0 0 24px 0;
     }
 
     @include media-notbook {
-      padding: 24px 0 50px;
+      padding: 0 0 50px 0;
     }
+  }
+
+  &__text {
+    max-width: 420px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+
+  &__link {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+    margin-top: 16px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__link-arr {
+    display: inline-block;
+    background-image: url(../img/ic/more.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 10px;
   }
 }
