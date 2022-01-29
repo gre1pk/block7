@@ -1,15 +1,4 @@
 .service-praice {
-  padding-bottom: 40px;
-  background-color: #f8f8f8;
-
-  @include media-tablet {
-    padding-bottom: 47px;
-  }
-
-  @include media-desktop {
-    padding-bottom: 50px;
-  }
-
   &__container {
     padding: 16px 0 24px;
 
@@ -36,9 +25,18 @@
     letter-spacing: 0.2px;
     color: #1b1c21;
     margin-top: 16px;
+    padding-bottom: 40px;
 
     &:hover {
       opacity: 0.5;
+    }
+
+    @include media-tablet {
+      padding-bottom: 47px;
+    }
+
+    @include media-desktop {
+      padding-bottom: 50px;
     }
   }
 

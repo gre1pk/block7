@@ -1,18 +1,15 @@
 .page-footer {
-  background-color: #f8f8f8;
-  padding: 0 0 19px 0;
-  border-top: 1px solid $border-color;
-
-  @include media-tablet {
-    padding: 32px 0 25px 0;
-  }
-
   @include media-desktop {
     margin: 0 0 0 320px;
   }
 
   &__container {
+    border-top: 1px solid $border-color;
+    padding-bottom: 19px;
+
     @include media-tablet {
+      padding-top: 32px;
+      padding-bottom: 25px;
       display: flex;
       justify-content: space-between;
     }
