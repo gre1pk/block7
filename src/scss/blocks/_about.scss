@@ -9,31 +9,6 @@
     align-items: center;
   }
 
-  &__title {
-    font-family: $font-bold;
-    font-size: 28px;
-    padding: 24px 0;
-    letter-spacing: -0.6px;
-    position: relative;
-
-    &::before {
-      content: "";
-      border-left: 4px solid $border-color;
-      height: 40px;
-      border-radius: 0 4px 4px 0;
-      left: -16px;
-      position: absolute;
-
-      @include media-tablet {
-        left: -24px;
-      }
-
-      @include media-notbook {
-        left: -34px;
-      }
-    }
-  }
-
   &__icon-wrapper {
     display: none;
 
