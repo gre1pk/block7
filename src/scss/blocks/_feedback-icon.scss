@@ -1,19 +1,19 @@
 .feedback-icon {
   display: flex;
 
-  &:hover {
-    filter: opacity(30%);
-  }
-
-  &:active {
-    filter: opacity(70%);
-  }
-
   &__item {
     margin-right: 16px;
     cursor: pointer;
     width: 40px;
     height: 40px;
+
+    &:hover {
+      filter: opacity(30%);
+    }
+
+    &:active {
+      filter: opacity(70%);
+    }
 
     &--phone {
       background-image: url(../img/ic/call.svg);

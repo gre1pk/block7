@@ -1,0 +1,30 @@
+.modal-feedback {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 16px;
+    color: $grey-text-color;
+  }
+
+  &__link {
+    color: $main-color;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  &__btn {
+    border: none;
+    width: 136px;
+    align-self: end;
+    margin-top: 23px;
+  }
+}

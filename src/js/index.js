@@ -8,6 +8,32 @@ const body = document.body;
 const brendsMore = document.querySelector(".repair-brend__more-button");
 const technicsMore = document.querySelector(".repair-technicals__more-button");
 const aboutMoreBtn = document.querySelector(".about__more-button");
+const feedbackMsgBtn = document.querySelector(".feedback-icon__item--message");
+const feedbackPhoneBtn = document.querySelector(".feedback-icon__item--phone");
+const feedbackMsg = document.querySelector("#feedback");
+const feedbackPhone = document.querySelector("#feedback-phone");
+const modalClose = document.querySelector("#closefbmsg");
+const mdalClosePhone = document.querySelector("#closefbphone");
+
+
+//modal feed-back
+feedbackMsgBtn.onclick = () => {
+  feedbackMsg.classList.add("active");
+  burgermMenu.classList.remove("active");
+};
+
+feedbackPhoneBtn.onclick = () => {
+  feedbackPhone.classList.add("active");
+  burgermMenu.classList.remove("active");
+};
+
+modalClose.onclick = () => {
+  feedback.classList.remove("active");
+};
+
+mdalClosePhone.onclick = () => {
+  feedbackPhone.classList.remove("active");
+};
 
 //about more text
 aboutMoreBtn.onclick = () => {
