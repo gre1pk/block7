@@ -113,7 +113,11 @@
           </div>
           <div class="modal" id="feedback">
             <div class="modal__container">
-              <button class="close-btn modal__close-btn" id="closefbmsg" type="button"></button>
+              <button
+                class="close-btn modal__close-btn"
+                id="closefbmsg"
+                type="button"
+              ></button>
               <h2 class="title modal__title">Обратная связь</h2>
               <form class="modal-feedback" action="/" method="post">
                 <label>
@@ -166,7 +170,11 @@
           </div>
           <div class="modal" id="feedback-phone">
             <div class="modal__container">
-              <button class="close-btn modal__close-btn" id="closefbphone" type="button"></button>
+              <button
+                class="close-btn modal__close-btn"
+                id="closefbphone"
+                type="button"
+              ></button>
               <h2 class="title modal__title">Заказать звонок</h2>
               <form class="modal-feedback" action="/" method="post">
                 <label>
@@ -226,9 +234,10 @@
             <li class="services-list__item">
               <a href="/">Специальные цены</a>
             </li>
-            <li class="services-list__item"><a href="/">Отзывы</a></li>
+            <li class="services-list__item">
+              <a href="/">Отзывы</a>
+            </li>
           </ul>
-
           <div class="about__text-container">
             <div class="about__text">
               <p class="about__text about__text--top">
@@ -245,6 +254,7 @@
                 гордимся тем, что к нам обращаются по рекомендациям и, в свою
                 очередь, советуют нас родным и близким.
               </p>
+              <p class="about__text about__text--top" id="about-text"></p>
               <button class="about__more-button more-button" type="button">
                 Читать далее
               </button>
@@ -524,7 +534,7 @@
           Разработано командой Apesong
         </p>
         <p class="page-footer__text page-footer__text--prav">
-          Политика конфиденциальности
+          <a href="/"> Политика конфиденциальности</a>
         </p>
         <p class="page-footer__text page-footer__text--info">
           Информация, размещенная на данной странице, не является публичной

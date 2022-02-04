@@ -45,16 +45,11 @@
   }
 
   &__search-icon {
-
     margin: 0 0 0 auto;
   }
 
   &__navigation {
     margin: 20px 0 32px;
-
-    @include media-tablet {
-      margin: 20px 0 240px;
-    }
   }
 
 
