@@ -3,7 +3,7 @@ import Swiper, { Pagination, Navigation } from "swiper";
 
 const burgerOpen = document.querySelector(".burger-icon");
 const burgerClose = document.querySelector(".burger-menu__close-btn");
-const burgermMenu = document.querySelector(".burger-menu");
+const burgerMenu = document.querySelector(".burger-menu");
 const body = document.body;
 const brendsMore = document.querySelector(".repair-brend__more-button");
 const technicsMore = document.querySelector(".repair-technicals__more-button");
@@ -15,16 +15,15 @@ const feedbackPhone = document.querySelector("#feedback-phone");
 const modalClose = document.querySelector("#closefbmsg");
 const mdalClosePhone = document.querySelector("#closefbphone");
 
-
 //modal feed-back
 feedbackMsgBtn.onclick = () => {
   feedbackMsg.classList.add("active");
-  burgermMenu.classList.remove("active");
+  burgerMenu.classList.remove("active");
 };
 
 feedbackPhoneBtn.onclick = () => {
   feedbackPhone.classList.add("active");
-  burgermMenu.classList.remove("active");
+  burgerMenu.classList.remove("active");
 };
 
 modalClose.onclick = () => {
@@ -37,37 +36,70 @@ mdalClosePhone.onclick = () => {
 
 //about more text
 aboutMoreBtn.onclick = () => {
+  aboutMoreBtn.classList.toggle("more-button__close");
   moreTextHandler();
 };
 
 const moreTextHandler = () => {
-  const textContainer = document.querySelector(".about__text");
-  const p = document.createElement("p");
-  p.classList.add("about__text--top");
-  p.textContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est sit amet facilisis magna etiam tempor orci eu lobortis. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Dignissim diam quis enim lobortis scelerisque fermentum dui. Feugiat sed lectus vestibulum mattis. Hac habitasse platea dictumst quisque sagittis purus. Eget lorem dolor sed";
-  textContainer.appendChild(p);
-  aboutMoreBtn.remove();
+  const textContainer = document.querySelector("#about-text");
+
+  if (textContainer.textContent.length < 1) {
+    textContainer.textContent = `Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna
+      aliqua. Est sit amet facilisis magna etiam
+      tempor orci eu lobortis. Vitae sapien
+      pellentesque habitant morbi tristique
+      senectus et netus. Dignissim diam quis enim lobortis scelerisque fermentum dui.
+      Feugiat sed lectus vestibulum mattis. Hac habitasse
+      platea dictumst quisque sagittis purus. Eget lorem dolor sed`;
+    aboutMoreBtn.textContent = "Скрыть";
+  } else {
+    textContainer.textContent = "";
+    aboutMoreBtn.textContent = "Читать далее";
+  }
 };
 
 //burger
 burgerOpen.onclick = () => {
-  burgermMenu.classList.add("active");
+  burgerMenu.classList.add("active");
+  tabIndex(".burger-menu");
 };
 
 burgerClose.onclick = () => {
-  burgermMenu.classList.remove("active");
+  burgerMenu.classList.remove("active");
+  resetTab();
 };
 
 body.onclick = ({ target }) => {
   if (
     !target.closest(".burger-menu") &&
-    burgermMenu.classList.contains("active") &&
+    burgerMenu.classList.contains("active") &&
     !target.closest(".burger-icon")
   ) {
-    burgermMenu.classList.remove("active");
+    burgerMenu.classList.remove("active");
   }
 };
+
+// function tabIndex(element) {
+//   const link = body.querySelectorAll("a");
+//   const button = body.querySelectorAll("button");
+//   const allLink = [...link, ...button];
+//   allLink.forEach((i) => {
+//     if (!i.closest(element)) {
+//       i.tabIndex = -1;
+//     }
+//   });
+// }
+
+// const resetTab = () => {
+//   const link = body.querySelectorAll("a");
+//   const button = body.querySelectorAll("button");
+//   const allLink = [...link, ...button];
+//   allLink.forEach((i) => {
+//     i.tabIndex = 1;
+//   });
+// };
 
 // slider
 
@@ -168,7 +200,7 @@ const togleMoreHandler = (button, name) => {
     button.classList.remove("more-button__close");
     active = false;
   } else {
-    button.textContent = "Cвернуть ";
+    button.textContent = "Скрыть";
     button.classList.add("more-button__close");
     active = true;
   }

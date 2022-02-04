@@ -29,6 +29,7 @@
   }
 
   &__close {
+    width: 90px;
     &::before {
       transform: rotate(180deg);
       left: -2px;
