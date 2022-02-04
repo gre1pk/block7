@@ -3,10 +3,6 @@
     padding-bottom: 24px;
     position: relative;
 
-    @include media-tablet {
-      padding-bottom: 32px;
-    }
-
     &:hover {
       transition: 200ms all;
       opacity: 0.4;
@@ -23,7 +19,7 @@
 
     &--active {
       color: $grey-text-color;
-      
+
       &::before {
         content: "";
         border-left: 4px solid $border-color;
