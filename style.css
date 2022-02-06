@@ -706,9 +706,6 @@ button {
     margin: 0 0 0 auto; }
   .burger-menu__navigation {
     margin: 20px 0 32px; }
-    @media (min-width: 768px) {
-      .burger-menu__navigation {
-        margin: 20px 0 240px; } }
   .burger-menu__email {
     margin-top: 16px; }
     .burger-menu__email a {
@@ -1049,10 +1046,12 @@ button {
     left: 14px;
     top: 25%;
     position: absolute; }
-  .more-button__close::before {
-    transform: rotate(180deg);
-    left: -2px;
-    top: -7px; }
+  .more-button__close {
+    width: 90px; }
+    .more-button__close::before {
+      transform: rotate(180deg);
+      left: -2px;
+      top: -7px; }
 
 .repair-technicals__container {
   padding: 16px 0 24px; }
@@ -1086,21 +1085,24 @@ button {
   letter-spacing: 0.2px; }
 
 .service-praice__link {
-  display: block;
+  display: inline-block;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #1b1c21;
   margin-top: 16px;
-  padding-bottom: 40px; }
+  margin-bottom: 40px;
+  width: 200px; }
   .service-praice__link:hover {
     opacity: 0.5; }
   @media (min-width: 768px) {
     .service-praice__link {
-      padding-bottom: 47px; } }
+      display: inline-block;
+      margin-bottom: 47px;
+      width: auto; } }
   @media (min-width: 1440px) {
     .service-praice__link {
-      padding-bottom: 50px; } }
+      margin-bottom: 50px; } }
 
 .service-praice__link-arr {
   display: inline-block;
@@ -1198,9 +1200,6 @@ button {
 .navigation__item {
   padding-bottom: 24px;
   position: relative; }
-  @media (min-width: 768px) {
-    .navigation__item {
-      padding-bottom: 32px; } }
   .navigation__item:hover {
     transition: 200ms all;
     opacity: 0.4; }
@@ -1374,6 +1373,9 @@ button {
       text-align: left; }
     .page-footer__text--prav {
       flex-basis: 33%; }
+      .page-footer__text--prav :hover {
+        color: #1b1c21;
+        text-decoration: underline; }
     .page-footer__text--info {
       flex-basis: 33%;
       text-align: right; } }
