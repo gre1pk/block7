@@ -19,11 +19,13 @@ const mdalClosePhone = document.querySelector("#closefbphone");
 feedbackMsgBtn.onclick = () => {
   feedbackMsg.classList.add("active");
   burgerMenu.classList.remove("active");
+  tabIndex(feedbackMsg);
 };
 
 feedbackPhoneBtn.onclick = () => {
   feedbackPhone.classList.add("active");
   burgerMenu.classList.remove("active");
+  tabIndex(feedbackPhone);
 };
 
 modalClose.onclick = () => {
@@ -63,12 +65,12 @@ const moreTextHandler = () => {
 //burger
 burgerOpen.onclick = () => {
   burgerMenu.classList.add("active");
-  tabIndex(".burger-menu");
+  tabIndex(burgerMenu);
 };
 
 burgerClose.onclick = () => {
   burgerMenu.classList.remove("active");
-  resetTab();
+  // resetTab();
 };
 
 body.onclick = ({ target }) => {
@@ -81,25 +83,30 @@ body.onclick = ({ target }) => {
   }
 };
 
-// function tabIndex(element) {
-//   const link = body.querySelectorAll("a");
-//   const button = body.querySelectorAll("button");
-//   const allLink = [...link, ...button];
-//   allLink.forEach((i) => {
-//     if (!i.closest(element)) {
-//       i.tabIndex = -1;
-//     }
-//   });
-// }
+const tabIndex = (element) => {
+  const focusableEls = element.querySelectorAll("button, a, input");
+  const firstFocusEl = focusableEls[0];
+  const lastFocusEl = focusableEls[focusableEls.length - 1];
+  firstFocusEl.focus();
+  element.addEventListener("keydown", function (e) {
+    const isTabPressed = e.key === "Tab" || e.kayCode === 9;
 
-// const resetTab = () => {
-//   const link = body.querySelectorAll("a");
-//   const button = body.querySelectorAll("button");
-//   const allLink = [...link, ...button];
-//   allLink.forEach((i) => {
-//     i.tabIndex = 1;
-//   });
-// };
+    if (!isTabPressed) {
+      return;
+    }
+    if (e.shiftKey) {
+      if (document.activeElement === firstFocusEl) {
+        lastFocusEl.focus();
+        e.preventDefault();
+      }
+    }
+    if (document.activeElement === lastFocusEl) {
+      firstFocusEl.focus();
+      e.preventDefault();
+    }
+  });
+};
+
 
 // slider
 

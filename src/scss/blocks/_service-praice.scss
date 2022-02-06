@@ -19,24 +19,27 @@
   }
 
   &__link {
-    display: block;
+    display: inline-block;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.2px;
     color: #1b1c21;
     margin-top: 16px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+    width: 200px;
 
     &:hover {
       opacity: 0.5;
     }
 
     @include media-tablet {
-      padding-bottom: 47px;
+      display: inline-block;
+      margin-bottom: 47px;
+      width: auto;
     }
 
     @include media-desktop {
-      padding-bottom: 50px;
+      margin-bottom: 50px;
     }
   }
 
