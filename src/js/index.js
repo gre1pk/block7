@@ -70,7 +70,6 @@ burgerOpen.onclick = () => {
 
 burgerClose.onclick = () => {
   burgerMenu.classList.remove("active");
-  // resetTab();
 };
 
 body.onclick = ({ target }) => {
