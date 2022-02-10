@@ -720,14 +720,14 @@ button {
       line-height: 32px;
       letter-spacing: -0.6px;
       color: #1b1c21; }
-  .burger-menu__lang-list {
+  .burger-menu__lang-container {
     display: flex;
     margin-top: 40px; }
   .burger-menu__lang-item {
     padding-right: 7px; }
     .burger-menu__lang-item:hover {
       opacity: 0.5; }
-    .burger-menu__lang-item--active button {
+    .burger-menu__lang-item--active {
       color: #7e7e82; }
 
 .swiper-pagination {
