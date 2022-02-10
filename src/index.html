@@ -16,18 +16,21 @@
         <button
           class="burger-icon page-header__burger-icon"
           type="button"
+          title="Открыть меню"
         ></button>
-        <a href="/" class="logo page-header__logo"
+        <a class="logo page-header__logo" href="/" title="Логотип"
           ><img height="50" src="./img/logo.svg" alt="logo"
         /></a>
         <div class="list-icon page-header__list-icon">
           <button
             type="button"
             class="list-icon__item list-icon__item--tools"
+            title="Оставить заявку"
           ></button>
           <button
             type="button"
             class="list-icon__item list-icon__item--check"
+            title="Статус ремонта"
           ></button>
         </div>
       </div>
@@ -40,42 +43,64 @@
               <button
                 class="close-btn burger-menu__close-btn"
                 type="button"
+                title="Закрыть меню"
               ></button>
-              <a class="logo burger-menu__logo" href="/"
+              <a class="logo burger-menu__logo" href="/" title="Логотип"
                 ><img height="50" src="./img/logo.svg" alt="logo"
               /></a>
               <button
                 class="search-icon burger-menu__search-icon"
                 type="button"
+                title="Поиск"
               ></button>
             </div>
             <nav class="navigation burger-menu__navigation">
               <ul class="navigation__list">
                 <li class="navigation__item navigation__item--active">
-                  <a class="navigation__link" href="#">Ремонт техники</a>
+                  <a class="navigation__link" href="#" title="Ремонт техники"
+                    >Ремонт техники</a
+                  >
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Услуги и сервисы</a>
+                  <a class="navigation__link" href="#" title="Услуги и сервисы"
+                    >Услуги и сервисы</a
+                  >
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#"
+                  <a
+                    class="navigation__link"
+                    href="#"
+                    title="Корпоративным клиентам"
                     >Корпоративным клиентам</a
                   >
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Продавцам техники</a>
+                  <a class="navigation__link" href="#" title="Продавцам техники"
+                    >Продавцам техники</a
+                  >
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Партнерам</a>
+                  <a class="navigation__link" href="#" title="Партнерам"
+                    >Партнерам</a
+                  >
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Производителям</a>
+                  <a class="navigation__link" href="#" title="Производителям"
+                    >Производителям</a
+                  >
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Наши сервисные центры</a>
+                  <a
+                    class="navigation__link"
+                    href="#"
+                    title="Наши сервисные центры"
+                    >Наши сервисные центры</a
+                  >
                 </li>
                 <li class="navigation__item">
-                  <a class="navigation__link" href="#">Контакты</a>
+                  <a class="navigation__link" href="#" title="Контакты"
+                    >Контакты</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -83,21 +108,24 @@
               <button
                 type="button"
                 class="feedback-icon__item feedback-icon__item--phone"
+                title="Заказать звонок"
               ></button>
               <button
                 type="button"
                 class="feedback-icon__item feedback-icon__item--message"
+                title="Обратная связь"
               ></button>
               <button
                 type="button"
                 class="feedback-icon__item feedback-icon__item--contact"
+                title="Контакты"
               ></button>
             </div>
             <div class="burger-menu__email">
-              <a href="mailto:mail@cps.com">mail@cps.com</a>
+              <a href="mailto:mail@cps.com" title="Почта">mail@cps.com</a>
             </div>
             <div class="burger-menu__phone">
-              <a href="tel:8 800 890 8900">8 800 890 8900</a>
+              <a href="tel:8 800 890 8900" title="Телефон">8 800 890 8900</a>
             </div>
             <ul class="burger-menu__lang-list">
               <li class="burger-menu__lang-item burger-menu__lang-item--active">
@@ -117,6 +145,7 @@
                 class="close-btn modal__close-btn"
                 id="closefbmsg"
                 type="button"
+                title="Закрыть"
               ></button>
               <h2 class="title modal__title">Обратная связь</h2>
               <form class="modal-feedback" action="/" method="post">
@@ -156,11 +185,18 @@
                 ></textarea>
                 <p class="modal-feedback__text">
                   Нажимая “отправить”, вы даете согласие на
-                  <a class="modal-feedback__link" href="/"
+                  <a
+                    class="modal-feedback__link"
+                    href="/"
+                    title="Согласие на обработку персональных данных"
                     >обработку персональных данных</a
                   >
                   и соглашаетесь с нашей
-                  <a class="modal-feedback__link" href="/">
+                  <a
+                    class="modal-feedback__link"
+                    href="/"
+                    title="политика конфиденциальности"
+                  >
                     политикой конфиденциальности</a
                   >
                 </p>
@@ -174,6 +210,7 @@
                 class="close-btn modal__close-btn"
                 id="closefbphone"
                 type="button"
+                title="Закрыть"
               ></button>
               <h2 class="title modal__title">Заказать звонок</h2>
               <form class="modal-feedback" action="/" method="post">
@@ -189,11 +226,18 @@
 
                 <p class="modal-feedback__text">
                   Нажимая “отправить”, вы даете согласие на
-                  <a class="modal-feedback__link" href="/"
+                  <a
+                    class="modal-feedback__link"
+                    href="/"
+                    title="Согласие на обработку персональных данных"
                     >обработку персональных данных</a
                   >
                   и соглашаетесь с нашей
-                  <a class="modal-feedback__link" href="/">
+                  <a
+                    class="modal-feedback__link"
+                    href="/"
+                    title="политика конфиденциальности"
+                  >
                     политикой конфиденциальности</a
                   >
                 </p>
@@ -208,12 +252,14 @@
                 <button
                   type="button"
                   class="list-icon__item list-icon__item--tools"
+                  title="Оставить заявку"
                 >
                   Оставить заявку
                 </button>
                 <button
                   type="button"
                   class="list-icon__item list-icon__item--check"
+                  title="Статус ремонта"
                 >
                   Статус ремонта
                 </button>
@@ -222,20 +268,28 @@
           </div>
           <ul class="services-list about__services-list">
             <li class="services-list__item">
-              <a href="/">Ремонтируемые устройства</a>
+              <a href="/" title="Ремонтируемые устройства"
+                >Ремонтируемые устройства</a
+              >
             </li>
             <li class="services-list__item">
-              <a href="/">Дополнительные услуги</a>
-            </li>
-            <li class="services-list__item"><a href="/">Цены на услуги</a></li>
-            <li class="services-list__item">
-              <a href="/">Адреса сервисных центров</a>
+              <a href="/" title="Дополнительные услуги"
+                >Дополнительные услуги</a
+              >
             </li>
             <li class="services-list__item">
-              <a href="/">Специальные цены</a>
+              <a href="/" title="Цены на услуги">Цены на услуги</a>
             </li>
             <li class="services-list__item">
-              <a href="/">Отзывы</a>
+              <a href="/" title="Адреса сервисных центров"
+                >Адреса сервисных центров</a
+              >
+            </li>
+            <li class="services-list__item">
+              <a href="/" title="Специальные цены">Специальные цены</a>
+            </li>
+            <li class="services-list__item">
+              <a href="/" title="Отзывы">Отзывы</a>
             </li>
           </ul>
           <div class="about__text-container">
@@ -273,62 +327,110 @@
               <ul class="brends-list swiper__wrapper">
                 <li class="swiper__slide">
                   <div class="brends-list__item brends-list__item--lenov">
-                    <a class="brends-list__link-go link-go" href="/"></a>
+                    <a
+                      class="brends-list__link-go link-go"
+                      href="/"
+                      title="Lenovo"
+                    ></a>
                   </div>
                 </li>
                 <li class="swiper__slide">
                   <div class="brends-list__item brends-list__item--sams">
-                    <a class="brends-list__link-go link-go" href="/"></a>
+                    <a
+                      class="brends-list__link-go link-go"
+                      href="/"
+                      title="Samsung"
+                    ></a>
                   </div>
                 </li>
                 <li class="swiper__slide">
                   <div class="brends-list__item brends-list__item--apple">
-                    <a class="brends-list__link-go link-go" href="/"></a>
+                    <a
+                      class="brends-list__link-go link-go"
+                      href="/"
+                      title="Apple"
+                    ></a>
                   </div>
                 </li>
                 <li class="swiper__slide">
                   <div class="brends-list__item brends-list__item--view">
-                    <a class="brends-list__link-go link-go" href="/"></a>
+                    <a
+                      class="brends-list__link-go link-go"
+                      href="/"
+                      title="ViewSonic"
+                    ></a>
                   </div>
                 </li>
                 <li class="swiper__slide">
                   <div class="brends-list__item brends-list__item--bosh">
-                    <a class="brends-list__link-go link-go" href="/"></a>
+                    <a
+                      class="brends-list__link-go link-go"
+                      href="/"
+                      title="Bosch"
+                    ></a>
                   </div>
                 </li>
                 <li class="swiper__slide">
                   <div class="brends-list__item brends-list__item--hp">
-                    <a class="brends-list__link-go link-go" href="/"></a>
+                    <a
+                      class="brends-list__link-go link-go"
+                      href="/"
+                      title="Hp"
+                    ></a>
                   </div>
                 </li>
                 <li class="swiper__slide swiper__slide--hidden">
                   <div class="brends-list__item brends-list__item--acer">
-                    <a class="brends-list__link-go link-go" href="/"></a>
+                    <a
+                      class="brends-list__link-go link-go"
+                      href="/"
+                      title="Acer"
+                    ></a>
                   </div>
                 </li>
                 <li class="swiper__slide swiper__slide--hidden">
                   <div class="brends-list__item brends-list__item--sony">
-                    <a class="brends-list__link-go link-go" href="/"></a>
+                    <a
+                      class="brends-list__link-go link-go"
+                      href="/"
+                      title="Sony"
+                    ></a>
                   </div>
                 </li>
                 <li class="brends-list__more-item">
                   <div class="brends-list__item brends-list__item--lenov">
-                    <a class="brends-list__link-go link-go" href="/"></a>
+                    <a
+                      class="brends-list__link-go link-go"
+                      href="/"
+                      title="Lenovo"
+                    ></a>
                   </div>
                 </li>
                 <li class="brends-list__more-item">
                   <div class="brends-list__item brends-list__item--hp">
-                    <a class="brends-list__link-go link-go" href="/"></a>
+                    <a
+                      class="brends-list__link-go link-go"
+                      href="/"
+                      title="Hp"
+                    ></a>
                   </div>
                 </li>
                 <li class="brends-list__more-item">
                   <div class="brends-list__item brends-list__item--sony">
-                    <a class="brends-list__link-go link-go" href="/"></a>
+                    <a
+                      class="brends-list__link-go link-go"
+                      href="/"
+                      title="Sony"
+                    ></a>
                   </div>
                 </li>
                 <li class="brends-list__more-item">
                   <div class="brends-list__item brends-list__item--bosh">
-                    <a class="brends-list__link-go link-go" href="/"></a>
+                    <a
+                      class="brends-list__link-go link-go"
+                      href="/"
+                      title="Bosch"
+                    ></a>
                   </div>
                 </li>
               </ul>
@@ -349,43 +451,71 @@
                 <li class="swiper__slide">
                   <div class="technics-list__item">
                     Ремонт ноутбуков
-                    <a class="technics-list__link-go link-go" href="/"></a>
+                    <a
+                      class="technics-list__link-go link-go"
+                      href="/"
+                      title="Ремонт ноутбуков"
+                    ></a>
                   </div>
                 </li>
                 <li class="swiper__slide">
                   <div class="technics-list__item">
                     Ремонт планшетов
-                    <a class="technics-list__link-go link-go" href="/"></a>
+                    <a
+                      class="technics-list__link-go link-go"
+                      href="/"
+                      title="Ремонт планшетов"
+                    ></a>
                   </div>
                 </li>
                 <li class="swiper__slide">
                   <div class="technics-list__item">
                     Ремонт ПК
-                    <a class="technics-list__link-go link-go" href="/"></a>
+                    <a
+                      class="technics-list__link-go link-go"
+                      href="/"
+                      title="Ремонт ПК"
+                    ></a>
                   </div>
                 </li>
                 <li class="swiper__slide swiper__slide--hidden">
                   <div class="technics-list__item">
                     Ремонт мониторов
-                    <a class="technics-list__link-go link-go" href="/"></a>
+                    <a
+                      class="technics-list__link-go link-go"
+                      href="/"
+                      title="Ремонт мониторов"
+                    ></a>
                   </div>
                 </li>
                 <li class="technics-list__more-item">
                   <div class="technics-list__item">
                     Ремонт ноутбуков
-                    <a class="technics-list__link-go link-go" href="/"></a>
+                    <a
+                      class="technics-list__link-go link-go"
+                      href="/"
+                      title="Ремонт ноутбуков"
+                    ></a>
                   </div>
                 </li>
                 <li class="technics-list__more-item">
                   <div class="technics-list__item">
                     Ремонт мониторов
-                    <a class="technics-list__link-go link-go" href="/"></a>
+                    <a
+                      class="technics-list__link-go link-go"
+                      href="/"
+                      title="Ремонт мониторов"
+                    ></a>
                   </div>
                 </li>
                 <li class="technics-list__more-item">
                   <div class="technics-list__item">
                     Ремонт консолей
-                    <a class="technics-list__link-go link-go" href="/"></a>
+                    <a
+                      class="technics-list__link-go link-go"
+                      href="/"
+                      title="Ремонт консолей"
+                    ></a>
                   </div>
                 </li>
               </ul>
@@ -520,7 +650,10 @@
             единичную услугу. Для получения коммерческого предложения на
             постоянное обслуживание, оставьте заявку.
           </p>
-          <a class="service-praice__link" href="/"
+          <a
+            class="service-praice__link"
+            href="/"
+            title="Коммерческое предложение"
             >Получить коммерческое предложение
             <span class="service-praice__link-arr"></span
           ></a>
@@ -534,7 +667,9 @@
           Разработано командой Apesong
         </p>
         <p class="page-footer__text page-footer__text--prav">
-          <a href="/"> Политика конфиденциальности</a>
+          <a href="/" title="Политика конфиденциальности">
+            Политика конфиденциальности</a
+          >
         </p>
         <p class="page-footer__text page-footer__text--info">
           Информация, размещенная на данной странице, не является публичной
