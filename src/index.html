@@ -127,17 +127,16 @@
             <div class="burger-menu__phone">
               <a href="tel:8 800 890 8900" title="Телефон">8 800 890 8900</a>
             </div>
-            <ul class="burger-menu__lang-list">
-              <li class="burger-menu__lang-item burger-menu__lang-item--active">
-                <button type="button">RU</button>
-              </li>
-              <li class="burger-menu__lang-item">
-                <button type="button">EN</button>
-              </li>
-              <li class="burger-menu__lang-item">
-                <button type="button">CH</button>
-              </li>
-            </ul>
+            <div class="burger-menu__lang-container">
+              <button
+                class="burger-menu__lang-item burger-menu__lang-item--active"
+                type="button"
+              >
+                RU
+              </button>
+              <button class="burger-menu__lang-item" type="button">EN</button>
+              <button class="burger-menu__lang-item" type="button">CH</button>
+            </div>
           </div>
           <div class="modal" id="feedback">
             <div class="modal__container">
@@ -248,7 +247,7 @@
           <div class="about__header">
             <h1 class="title about__title">Услуги и сервисы</h1>
             <div class="about__icon-wrapper">
-              <ul class="list-icon">
+              <div class="list-icon">
                 <button
                   type="button"
                   class="list-icon__item list-icon__item--tools"
@@ -263,7 +262,7 @@
                 >
                   Статус ремонта
                 </button>
-              </ul>
+              </div>
             </div>
           </div>
           <ul class="services-list about__services-list">

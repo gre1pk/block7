@@ -76,7 +76,7 @@
     }
   }
 
-  &__lang-list {
+  &__lang-container{
     display: flex;
     margin-top: 40px;
   }
@@ -88,7 +88,7 @@
       opacity: 0.5;
     }
 
-    &--active button {
+    &--active  {
       color: $grey-text-color;
     }
   }
